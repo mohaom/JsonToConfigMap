@@ -12,7 +12,7 @@ namespace JsonToConfigMap
     {
         public static void ConvertToCM(string JsonFile, string YamlFile, string CMName, bool Tokenize)
         {
-
+            sb.Clear();
             fillCM(sb, CMName);
             using (StreamReader sr = new StreamReader(JsonFile))
             {
