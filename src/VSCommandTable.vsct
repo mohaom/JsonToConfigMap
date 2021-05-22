@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+  <Include href="KnownImageIds.vsct" />
+
+  <Commands package="guidPackage">
+    <Buttons>
+      <Button guid="guidPackageCmdSet" id="ApplyCustomToolId" priority="0x0100" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_ITEM_INCLUDEEXCLUDE" />
+        <Icon guid="ImageCatalogGuid" id="TriggerScript" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Convert To ConfigMap</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSPackageCmdSet" id="cmdidToolWindow1Command" priority="0x0100" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>ToolWindow1</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidVSPackageCmdSet" id="cmdidmyToolWindowCommand" priority="0x0100" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1" />
+        <Icon guid="guidImages1" id="bmpPic1" />
+        <Strings>
+          <ButtonText>myToolWindow</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+  </Commands>
+
+  <VisibilityConstraints>
+    <VisibilityItem guid="guidPackageCmdSet" id="ApplyCustomToolId" context="guidUIContext" />
+  </VisibilityConstraints>
+
+  <Symbols>
+    <GuidSymbol name="guidPackage" value="{2e927fa3-8684-47fc-9674-0046499860d3}" />
+    <GuidSymbol name="guidUIContext" value="{69760bd3-80f0-4901-818d-c4656aaa08e9}" />
+
+    <GuidSymbol name="guidPackageCmdSet" value="{4aaf93c0-70ae-4a4b-9fb6-1ad3997a9adf}">
+      <IDSymbol name="ApplyCustomToolId" value="0x0100" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{4b2a328d-ec65-45e8-954a-d8f90a2ac7a4}" name="guidVSPackageCmdSet">
+      <IDSymbol value="256" name="cmdidToolWindow1Command" />
+      <IDSymbol value="257" name="cmdidmyToolWindowCommand" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{e4602cf1-1497-42cd-b753-c643e766e037}" name="guidImages">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  
+    <GuidSymbol value="{bcdffb92-0dd4-4c84-a867-5c3fdc1fce8b}" name="guidImages1">
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

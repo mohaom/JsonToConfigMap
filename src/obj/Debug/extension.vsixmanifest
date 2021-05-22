@@ -1,0 +1,21 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="87EE2CA1-C0B8-4B40-ADA2-98C620EEEB22" Version="1.0" Language="en-US" Publisher="Mohammed.Omar" />
+    <DisplayName>Json To ConfigMap</DisplayName>
+    <Description xml:space="preserve">Allows you to convert AppSettings Json file to Kubernetes ConfigMap file (Yaml)Allow</Description>
+    <Icon>JsonToConfigMap.ico</Icon>
+    <PreviewImage>JsonToConfigMap.png</PreviewImage>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.1.28811.260,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="JsonToConfigMap.pkgdef" />
+  </Assets>
+</PackageManifest>
