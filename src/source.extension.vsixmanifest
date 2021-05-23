@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="87EE2CA1-C0B8-4B40-ADA2-98C620EEEB22" Version="1.0" Language="en-US" Publisher="Mohammed.Omar" />
+        <Identity Id="87EE2CA1-C0B8-4B40-ADA2-98C620EEEB22" Version="1.2" Language="en-US" Publisher="Mohammed.Omar" />
         <DisplayName>Json To ConfigMap</DisplayName>
         <Description xml:space="preserve">Allows you to convert AppSettings Json file to Kubernetes ConfigMap file (Yaml)Allow</Description>
         <Icon>JsonToConfigMap.ico</Icon>

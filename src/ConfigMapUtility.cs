@@ -13,6 +13,8 @@ namespace JsonToConfigMap
         public static void ConvertToCM(string JsonFile, string YamlFile, string CMName, bool Tokenize)
         {
             sb.Clear();
+            CMName = CMName.ToLower().Replace(".", "").Replace("_", "").Replace("-","");
+
             fillCM(sb, CMName);
             using (StreamReader sr = new StreamReader(JsonFile))
             {
